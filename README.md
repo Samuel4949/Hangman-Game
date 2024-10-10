@@ -11,6 +11,6 @@
 <hr>
 <h3>Features</h3>
 <ul>
-  <li>Random Module</li>
+  <li>Random Module❓</li>
   <li>String Module</li>
 </ul>
