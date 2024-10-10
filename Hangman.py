@@ -5,7 +5,7 @@ print("You have 8 errors before the game ends")
 
 with open("words.txt") as words_file:
     words = words_file.read().splitlines()
-    chosen_word = random.choice(words)
+    chosen_word = random.choice(words).strip()
 
 check_answer = chosen_word[:] 
 answer = len(check_answer)*"_" 
@@ -37,7 +37,7 @@ while wrong_count != 8:
     entered_letters += user_answer
     
     if answer == chosen_word:
-        print("CONGRATULATIONS! You guessed the mystery word")
+        print("CONGRATULATIONS! You guessed the mystery word: " + chosen_word")
         print(check_answer)
         break
 
